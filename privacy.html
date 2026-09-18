@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Offline AI Academy</title>
+<meta name="description" content="Privacy policy for Offline AI Academy: no account, no analytics, no servers. Your study material and conversations stay on your iPhone.">
+<style>
+  :root{
+    --bg:#FFFFFF; --surface:#F5F8FD; --stroke:#E2E8F2;
+    --text:#0F1319; --text2:#55606D; --text3:#8A95A1;
+    --accent:#0A57BF; --accent2:#1877F2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#080B10; --surface:#141A22; --stroke:#232C36;
+      --text:#E9EEF4; --text2:#AAB4C0; --text3:#76828F;
+      --accent:#7DB2FF; --accent2:#A9CBFF;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:56px 20px 96px}
+  .mark{font-weight:800;font-size:15px;letter-spacing:-.2px}
+  .mark span{background:linear-gradient(135deg,var(--accent2),var(--accent));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-size:34px;line-height:1.15;letter-spacing:-.8px;margin:26px 0 10px}
+  h2{font-size:19px;letter-spacing:-.3px;margin:38px 0 10px}
+  p,li{color:var(--text2)}
+  .lede{font-size:18px;color:var(--text)}
+  .card{background:var(--surface);border:1px solid var(--stroke);border-radius:16px;
+    padding:18px 20px;margin:22px 0}
+  .card strong{color:var(--text)}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+  th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--stroke);vertical-align:top}
+  th{color:var(--text3);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px}
+  td{color:var(--text2)}
+  .foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--stroke);
+    color:var(--text3);font-size:13.5px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark">Offline <span>AI Academy</span></div>
+
+  <h1>Privacy Policy</h1>
+  <p class="lede">Offline AI Academy has no account, no analytics and no server.
+  The developer does not collect, receive or store any of your information.</p>
+  <p>Last updated: 18 September 2026.</p>
+
+  <div class="card">
+    <strong>The short version.</strong>
+    <p style="margin-bottom:0">The AI model is bundled inside the app and runs on
+    your iPhone. What you type, the documents you attach and the conversations you
+    have with the tutor stay on the device. Two things can leave it, and both are
+    your choice: connecting a cloud AI provider (off by default), and using the
+    microphone button for dictation, which goes through Apple's speech recognition.
+    Both are explained below.</p>
+  </div>
+
+  <h2>What the app stores, and where</h2>
+  <p>Everything below lives in the app's own storage on your iPhone, protected by
+  iOS file encryption, and is removed when you delete the app.</p>
+  <table>
+    <tr><th>What</th><th>Where</th><th>Kept</th></tr>
+    <tr>
+      <td>Your subject, reason, job title, years of experience and question type</td>
+      <td>App memory while the app is open</td>
+      <td>Until you close the app</td>
+    </tr>
+    <tr>
+      <td>Text extracted from a PDF or DOCX you attach</td>
+      <td>App memory while the app is open</td>
+      <td>Until you close the app. The original file is never copied into the app</td>
+    </tr>
+    <tr>
+      <td>Your conversation with the tutor</td>
+      <td>App memory only — it is never written to disk</td>
+      <td>Until you leave the session</td>
+    </tr>
+    <tr>
+      <td>Theme and accent colour</td>
+      <td>App settings on the device</td>
+      <td>Until changed or the app is deleted</td>
+    </tr>
+    <tr>
+      <td>A cloud API key, if you add one</td>
+      <td>The app's private settings on the device</td>
+      <td>Until you remove it or delete the app</td>
+    </tr>
+    <tr>
+      <td>A GGUF model file, if you import one</td>
+      <td>The app's Documents folder</td>
+      <td>Until you delete it in the app</td>
+    </tr>
+  </table>
+  <p>The app's Documents folder is visible to you under <em>Files → On My iPhone →
+  Offline AI Academy</em>, so you can add or remove model files yourself. Nothing
+  else is written there.</p>
+
+  <h2>What is never collected</h2>
+  <ul>
+    <li>No account, sign-in, email address or profile.</li>
+    <li>No analytics, crash reporting, advertising identifiers or tracking of any kind.</li>
+    <li>No third-party SDKs. The app embeds one open-source inference library and nothing else.</li>
+    <li>No copy of your documents. Text is read out of the file while you are using it and is not saved.</li>
+  </ul>
+
+  <h2>When the app uses the network</h2>
+  <p>In its default state the app makes no network requests. It works in aeroplane
+  mode, and that is the point of it. There are exactly two optional paths out.</p>
+
+  <div class="card">
+    <strong>1. A cloud AI provider you connect yourself.</strong>
+    <p>Under <em>Settings → AI Engine → Connect a cloud API</em> you can add your own
+    key for Gemini, ChatGPT (OpenAI), Claude (Anthropic), Groq, Mistral, DeepSeek or
+    Qwen, or point the app at a custom endpoint such as Ollama, LM Studio or
+    OpenRouter. This is off unless you set it up.</p>
+    <p style="margin-bottom:0">While a cloud engine is active, the text of your
+    session — the subject or job details you entered, any text extracted from a
+    document you attached, and the messages in the conversation — is sent to that
+    provider so it can reply. That provider's own privacy policy and terms then
+    apply to it; the developer of this app is not a party to it and never sees the
+    traffic. Switch back to the on-device model at any time and the network path
+    closes again.</p>
+  </div>
+
+  <div class="card">
+    <strong>2. Dictation, if you tap the microphone.</strong>
+    <p style="margin-bottom:0">The microphone button uses Apple's Speech framework
+    to turn speech into text. Depending on your device, iOS version and language,
+    Apple may perform that recognition on the device or send the audio to Apple for
+    processing. This app does not control which, does not receive the audio, and
+    does not store it. If you would rather nothing leave the device, type instead of
+    dictating, or turn off Speech Recognition for this app in
+    <em>iOS Settings → Privacy &amp; Security</em>.</p>
+  </div>
+
+  <h2>Permissions the app asks for</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th><th>Needed?</th></tr>
+    <tr><td>Microphone</td><td>Dictating an answer instead of typing it</td><td>Optional</td></tr>
+    <tr><td>Speech Recognition</td><td>Turning that dictation into text</td><td>Optional</td></tr>
+  </table>
+  <p>The app asks for nothing else. It does not request contacts, photos, camera,
+  location, calendar, health data or notifications.</p>
+
+  <h2>Children</h2>
+  <p>The app is a study tool and is suitable for students. It collects no personal
+  information from anyone, including children, because it collects none at all. If
+  a cloud provider is connected on a child's device, that provider's terms and age
+  requirements apply to the text sent to it — which is a reason to leave the app on
+  its bundled offline model.</p>
+
+  <h2>Your rights</h2>
+  <p>There is no data held about you to access, correct, export or delete, because
+  none is collected. Everything the app keeps is on your own device and under your
+  control: clear a field, delete an imported model in <em>Settings → AI Engine</em>,
+  remove an API key, or delete the app to remove all of it at once.</p>
+
+  <h2>Changes</h2>
+  <p>If a future version changes what leaves the device, this page and the App Store
+  privacy label will be updated before that version ships, and the change will be
+  described in the release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, or about anything the app does with your
+  information: <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a>.
+  A real person answers.</p>
+
+  <div class="foot">
+    Offline AI Academy · Built with Llama. Llama 3.2 is licensed under the Llama 3.2
+    Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.<br>
+    Contact: <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a>
+  </div>
+</div>
+</body>
+</html>
